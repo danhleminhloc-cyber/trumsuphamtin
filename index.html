@@ -71,11 +71,11 @@
 <body>
 
   <div class="card" id="formCard">
-    <h1>💌 Hộp Thư Bí Mật</h1>
+    <h1>Hộp Thư Bí Mật</h1>
     <p class="subtitle">Gửi lời nhắn ẩn danh đến ai đó mà bạn chưa dám nói!</p>
 
     <div class="guideline">
-      💡 Lưu ý: lời nhắn được gửi ẩn danh, nhưng hãy viết bằng thiện chí — tránh xúc phạm,
+      Lưu ý: lời nhắn được gửi ẩn danh, nhưng hãy viết bằng thiện chí — tránh xúc phạm,
       chế giễu hay bịa đặt về người khác. Ban tổ chức có quyền không đọc/công bố những lời nhắn
       không phù hợp.
     </div>
@@ -85,20 +85,20 @@
       <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
 
       <div class="form-group">
-        <label for="receiver">🎯 Lời nhắn này dành cho ai?</label>
+        <label for="receiver">Lời nhắn này dành cho ai?</label>
         <input type="text" id="receiver" name="Người nhận" maxlength="60" placeholder="Nhập tên/biệt danh người nhận..." required>
       </div>
 
       <div class="form-group">
-        <label for="category">🏷️ Chủ đề lời nhắn:</label>
+        <label for="category">Chủ đề lời nhắn:</label>
         <select id="category" name="Chủ đề">
-          <option value="Lời demo">Lời demo</option>
-          <option value="Góp ý chân thành 💡">Góp ý chân thành 💡</option>
+          <option value="Demo">Demo</option>
+          <option value="Góp ý chân thành ">Góp ý chân thành </option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="message">✍️ Nội dung lời nhắn:</label>
+        <label for="message">Nội dung lời nhắn:</label>
         <textarea id="message" name="Lời nhắn" maxlength="500" placeholder="Viết những điều bạn muốn gửi gắm tại đây..." required></textarea>
         <div class="char-count" id="charCount">0 / 500</div>
       </div>
@@ -109,16 +109,16 @@
         Tôi cam kết lời nhắn này thiện chí, tôn trọng và không nhằm xúc phạm ai.
       </label>
 
-      <button type="submit" id="submitBtn">🚀 Gửi Lời Nhắn Âm Thầm</button>
+      <button type="submit" id="submitBtn">Gửi Lời Nhắn Âm Thầm</button>
     </form>
   </div>
 
   <!-- Màn hình thông báo sau khi gửi -->
   <div class="card" id="thankYouMsg">
-    <h2>🎉 Đã Gửi Thành Công!</h2>
+    <h2>Đã Gửi Thành Công!</h2>
     <p>Lời nhắn ẩn danh của bạn đã được đóng dấu niêm phong và gửi đi an toàn.</p>
-    <p><i>Cảm ơn bạn đã chia sẻ cảm xúc!</i></p>
-    <button onclick="resetForm()" style="background:#764ba2;margin-top:15px;">Gửi thêm lời nhắn khác ✉️</button>
+    <p><i>Cảm ơn bạn đã chia sẻ và góp ý</i></p>
+    <button onclick="resetForm()" style="background:#764ba2;margin-top:15px;">Gửi thêm lời nhắn khác</button>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -212,7 +212,7 @@
       } catch (error) {
         showError('Không thể kết nối internet, thử lại nhé!');
       } finally {
-        submitBtn.innerText = '🚀 Gửi Lời Nhắn Âm Thầm';
+        submitBtn.innerText = 'Gửi Lời Nhắn Âm Thầm';
         submitBtn.disabled = false;
       }
     });
@@ -226,5 +226,8 @@
       formCard.style.display = 'block';
     }
   </script>
+ <footer>
+  <p>&copy; By Thái tử Tin Học/All HTML/Run in Github.</p>
+</footer>
 </body>
 </html>
